@@ -1,0 +1,16 @@
+# Python / IDE
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.idea/
+.vscode/
+
+# Generated or scratch files, not part of the submission
+all_images.png
+test.py
+main.py
+starter.ipynb
+sample_predictions.csv
+requirements_suggested.txt
+Junior Data Analyst.md
+משימה/
