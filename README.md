@@ -6,9 +6,7 @@ Junior Data Analyst task: exploring photos of manufactured components, extractin
 
 | File | Contents |
 | --- | --- |
-| `part_a.ipynb` | Part A - getting to know the data: label split, defect rate by camera, one chart and one insight |
-| `part_b.ipynb` | Part B - six sample images, a function with two image features (`local_anomaly_score`, `contour_complexity`), and a comparison between OK and defective images |
-| `part_c+d.ipynb` | Parts C and D - golden-template model, dev/validation split, confusion matrix, precision/recall, one analysed error, and `predictions.csv` |
+| `component_defect_detection.ipynb` | Parts A-D in one notebook: data exploration, six sample images and two image features (`local_anomaly_score`, `contour_complexity`), the golden-template model with a dev/validation split, confusion matrix, precision/recall, one analysed error, and `predictions.csv` |
 | `features.py` | Golden-template pipeline used by Part C: alignment (ORB + RANSAC), template, difference map, features |
 | `part_e.txt` | Part E - conclusions and use of AI (Hebrew) |
 | `predictions.csv` | 72 test predictions: `image_id,predicted_defect,score` |
@@ -23,7 +21,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Run the notebooks from the repository root, in order: `part_a.ipynb`, `part_b.ipynb`, `part_c+d.ipynb`. Each one runs top to bottom on its own. `part_c+d.ipynb` rewrites `predictions.csv`. The seeds are fixed, so the output is the same on every run.
+Open `component_defect_detection.ipynb` from the repository root and run all cells top to bottom. It rewrites `predictions.csv`. The seeds are fixed, so the output is the same on every run.
 
 Note: scikit-learn 1.5 does not work with numpy 2.x (`numpy.dtype size changed` on import), which is why `requirements.txt` asks for scikit-learn 1.6 or later.
 

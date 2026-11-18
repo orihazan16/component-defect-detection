@@ -14,7 +14,7 @@ is a *local* departure from a clean reference component. The pipeline is
 Both features are divided by the median of the image's own difference map, so an
 image that is simply darker, brighter or noisier does not get a high score.
 
-Used by part_b.ipynb (Sections B.2 / B.3) and part_c+d.ipynb (Sections C / D).
+Used by component_defect_detection.ipynb (Parts C and D).
 """
 
 from pathlib import Path
